@@ -1,0 +1,220 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*=======PERSONAL CODE STARTS HERE======*/
+
+/*custom style add-ons*/
+
+@font-face {
+	font-family: 'MKfont';
+	src: url('mortalkombat1.ttf') format('truetype');
+}
+
+
+/*div {
+	border: 1px solid magenta;
+	box-sizing: border-box;
+}*/
+/*for layout purposes*/
+
+
+/*-----Header------*/
+/*#navBar {
+	height: 80px;
+	width: 100%;
+	top: 0;
+	background: #1d2326;
+	background-color: #f8f8f8;
+	text-align: center;
+
+}
+
+#navBar h2{
+	font-family: 'MKfont', Helvetica, sans-serif;
+	font-size: 42pt;
+	text-align: center;
+	color: #611427;
+	text-shadow: 2px 2px #666;
+	color: white;
+	text-shadow: 3px -3px 4px cyan, -3px -3px 4px magenta, 0px 3px 4px yellow;
+}
+
+.pageButtons {
+	color: #6a6a61;
+	margin-top: 5px;
+}
+
+.pageButtons li{
+	display: inline;
+	font-size: 12pt;
+	font-weight: 300;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	padding: 0 5px 0 5px;
+}*/
+
+
+#bodyColumn {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	min-width: 800px;
+}
+/*-----Jumbotron----*/
+
+.jumbotron {
+	/* background only for layout purposes*/
+	background: #DDDCC5;
+	width:100%;
+	height: 600px;
+	overflow:hidden;
+
+}
+.poster {
+	width:100%;
+	/*min-height: 600px;*/
+	min-width: 800px;
+	margin-top: -30%;
+
+}
+
+
+/*---Index page Work bar---*/
+
+#workBar {
+	background: white;
+	width: 2400px;
+	margin: 0;
+	padding: 0;
+	min-height: 180px;
+	overflow: hidden;
+
+}
+
+.scrollBox {
+	background: red;
+	width: 100%;
+	overflow: hidden;
+}
+
+.workElement {
+	width: 40vw;
+	/*float: left;*/
+	min-width: 320.391px;
+	display: inline-block;
+	max-width: 600px;
+	vertical-align: top;
+	position: absolute;
+}
+
+.homeThumb1 {
+	left: 0;
+}
+
+
+.homeThumb2 {
+	left: 40%;
+}
+
+.homeThumb3 {
+	left: 80%;
+}
+
+.homeThumb4 {
+	left: 120%;
+}
+
+.largeText {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: white;
+	font-weight: 300;
+	font-size: 10vw;
+	position: absolute;
+	display: none;
+	opacity: 0.5;
+	width: 100%;
+	background: black;
+	z-index: 1;
+}
+
+.visable {
+	display: inline;
+}
+
+/*----Footer----*/
+
+#footer {
+	background: #1d2326;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	clear:both;
+}
+
+#aboutBar {
+	height: 100px;
+	width: 100%;
+	background: #958976;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
