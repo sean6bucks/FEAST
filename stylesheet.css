@@ -96,6 +96,9 @@ table {
 	padding: 0 5px 0 5px;
 }*/
 
+body {
+	overflow-x: hidden;
+}
 
 #bodyColumn {
 	width: 100%;
@@ -148,6 +151,7 @@ table {
 	max-width: 600px;
 	vertical-align: top;
 	position: absolute;
+	overflow: hidden;
 }
 
 .homeThumb1 {
