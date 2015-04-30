@@ -155,20 +155,29 @@ body {
 }
 
 .homeThumb1 {
-	left: 0;
+	left: -40%;
 }
 
 
 .homeThumb2 {
-	left: 40%;
+	left: -40%;
 }
 
 .homeThumb3 {
-	left: 80%;
+	left: -40%;
 }
 
 .homeThumb4 {
-	left: 120%;
+	left: -40%;
+}
+.homeThumb5 {
+	left: -40%;
+}
+.homeThumb6 {
+	left: -40%;
+}
+.homeThumb7 {
+	left: -40%;
 }
 
 .largeText {
