@@ -187,9 +187,8 @@ body {
 	font-size: 10vw;
 	position: absolute;
 	display: none;
-	opacity: 0.5;
 	width: 100%;
-	background: black;
+	background: rgba(0,0,0,0.5);
 	z-index: 1;
 }
 

@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-window.onload = function (){
-
-
-
 var scroller = function(){
    var thumb1 = document.getElementsByClassName("homeThumb1");
    TweenMax.from(thumb1, 8, {left:"120%", repeat:-1, ease:Linear.easeNone});
@@ -26,16 +22,15 @@ var scroller = function(){
    var thumb7 = document.getElementsByClassName("homeThumb7");
    TweenMax.from(thumb7, 6, {left:"80%", ease:Linear.easeNone});
 
-	};
+};
+
+window.onload = function (){
 
 scroller();
 
-$('.largeText').mouseenter(function(){
-	scroller.restart();
-});
-
-
 }
+
+
 
 /* SECOND VERSION, inifinite loop by glitchy animation causes delay and disaster
 var firstImg = $('.scrollBox img:first-child')
@@ -121,14 +116,21 @@ setInterval(scrollContinue(), 6000);
 */
 
 
+$(window).resize(function(){
 
+	$('.largeText').height(
+		$('.workElement').height()
+	);
+});
 
 $('#workBar').hover(function(){
 	// $('.largeText').css("display","inline");
 	// $('.largeText').css("opacity","0.5", 500);
 	$('.largeText').height(
-		$('#workBar').height()
+		$('.workElement').height()
 		);
 	$('.largeText').toggleClass("visable");
 });
+
+
 });
