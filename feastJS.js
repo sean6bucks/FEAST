@@ -31,10 +31,11 @@ window.onload = function (){
 scroller();
 
 $(function() {
-    $("#workBar").css("min-height", function() {
+    $("#workBar").css("height", function() {
         return $('.workElement').height();
     });
 });
+
 
 }
 
@@ -130,11 +131,13 @@ $(window).resize(function(){
 	);
 });
 
-$(window).resize(function(){
-	$('#workBar').height(
-		$('.workElement').height()
-	);
+$(window).resize(function() {
+    $("#workBar").css("height", function() {
+        return $('.workElement').height();
+    });
+
 });
+
 
 $('#workBar').hover(function(){
 	// $('.largeText').css("display","inline");

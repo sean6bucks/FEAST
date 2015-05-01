@@ -157,7 +157,7 @@ background-size: cover;
 	width: 2400px;
 	margin: 0;
 	padding: 0;
-	min-height: 180px;
+	/*min-height: 180px;*/
 	overflow: hidden;
 
 }
