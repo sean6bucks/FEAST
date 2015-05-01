@@ -4,7 +4,7 @@
 	<head>
 		<title>Feast - Practical Effects and Props</title>
 		<link rel="stylesheet" href='stylesheet.css' type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'/>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
@@ -19,13 +19,20 @@
 	<body>
 		<div id="bodyColumn">
 			<div class="jumbotron">
-				<img class="poster" src="images/fullRes/ICEMAN01.jpg"/>
+				<h1 class="feastTitle">FEAST</h1>
+				<video autoplay loop poster="images/feastintro2.jpg" id="bgvid">
+					<source src="images/feastintro2.webm" type="video/webm">
+					<source src="images/feastintro2.mp4" type="video/mp4">
+				</video>
+				<img src="images/feastintro2.jpg">
+				<!-- <img class="poster" src="images/fullRes/ICEMAN01.jpg"/> -->
 			</div>
-			<a href="#">
 				<div id="workBar">
-					<div class="largeText">
-						<h5>PORTFOLIO</h5>
-					</div>
+					<a href="#">
+						<div class="largeText">
+							<h5>PORTFOLIO</h5>
+						</div>
+					</a>
 					<!-- thumbnails of work as a preview -->
 					<div class="scrollBox">
 						<img class="workElement homeThumb5" src="images/preview2.jpg" /><!--
@@ -37,9 +44,14 @@
 						--><img class="workElement homeThumb4" src="images/preview4.jpg" />
 					</div>
 				</div>
-			</a>
+			</div>
 			<div id="aboutBar">
-			
+				<div class="aboutText">
+					<h3>FEAST Inc.</h3> 
+					<h2>Practical Effects & Props</h3>
+					<hr>
+					<p>FEAST Inc. specializes in fabrication and implementation of beautiful screen-ready practical effects. With over twenty combined years of experience in movie, television, and stage prop creation, FEAST is able to make any thing you can imagine come to life.</p>
+				</div>  
 				<!-- about bar -->
 			</div>
 			<footer id="footer">

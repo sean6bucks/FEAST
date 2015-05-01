@@ -22,14 +22,21 @@ var scroller = function(){
    var thumb7 = document.getElementsByClassName("homeThumb7");
    TweenMax.from(thumb7, 6, {left:"80%", ease:Linear.easeNone});
 
+
+
 };
 
 window.onload = function (){
 
 scroller();
 
-}
+$(function() {
+    $("#workBar").css("min-height", function() {
+        return $('.workElement').height();
+    });
+});
 
+}
 
 
 /* SECOND VERSION, inifinite loop by glitchy animation causes delay and disaster
@@ -119,6 +126,12 @@ setInterval(scrollContinue(), 6000);
 $(window).resize(function(){
 
 	$('.largeText').height(
+		$('.workElement').height()
+	);
+});
+
+$(window).resize(function(){
+	$('#workBar').height(
 		$('.workElement').height()
 	);
 });

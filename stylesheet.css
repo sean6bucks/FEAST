@@ -110,12 +110,37 @@ body {
 
 .jumbotron {
 	/* background only for layout purposes*/
-	background: #DDDCC5;
+	background: red;
 	width:100%;
 	height: 600px;
 	overflow:hidden;
+	position: relative;
 
 }
+
+#bgvid{
+position: absolute;
+left: -25%;
+bottom: -25px;
+width: 150%;
+height: auto;
+z-index: 0;
+background: url(images/feastintro2.jpg) no-repeat;
+background-size: cover;
+/*vertical-align: bottom;*/
+}
+
+.feastTitle {
+	font-family: 'MKfont', Helvetica, Arial, sans-serif;
+	position: absolute;
+	font-size: 200px;
+	width: 100%;
+	text-align: center;
+	margin: 200px auto;
+	z-index: 2;
+	color: white;
+}
+
 .poster {
 	width:100%;
 	/*min-height: 600px;*/
@@ -128,7 +153,7 @@ body {
 /*---Index page Work bar---*/
 
 #workBar {
-	background: white;
+	background: red;
 	width: 2400px;
 	margin: 0;
 	padding: 0;
@@ -141,12 +166,13 @@ body {
 	background: red;
 	width: 100%;
 	overflow: hidden;
+	min-height:180px;
 }
 
 .workElement {
-	width: 40vw;
+	width: 40%;
 	/*float: left;*/
-	min-width: 320.391px;
+	/*min-width: 320.391px;*/
 	display: inline-block;
 	max-width: 600px;
 	vertical-align: top;
@@ -183,8 +209,8 @@ body {
 .largeText {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: white;
-	font-weight: 300;
-	font-size: 10vw;
+	font-weight: 100;
+	font-size: 17vw;
 	position: absolute;
 	display: none;
 	width: 100%;
@@ -195,23 +221,93 @@ body {
 .visable {
 	display: inline;
 }
+/*------ABOUT/CONTACT-----*/
+
+#aboutBar {
+	height: auto;
+	width: 100%;
+	background: #222;
+
+}
+
+.aboutText {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #f8f8f8;
+	text-align: center;
+}
+
+.aboutText h3{
+	font-size: 50pt;
+	margin: 0 auto 5px auto;
+	padding-top: 50px;
+	font-weight: 100;
+}
+.aboutText h2{
+	font-size: 24pt;
+	margin-bottom: 20px;
+	font-weight: 100;
+}
+
+.aboutText hr{
+	width: 30%;
+	margin: 0 35%;
+	height: 1px;
+}
+.aboutText p{
+	width: 525px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-indent: 50px;
+	font-size: 20pt;
+	text-align: left;
+	padding-bottom: 50px;
+	font-weight: 100;
+}
+
+
+
 
 /*----Footer----*/
 
 #footer {
-	background: #1d2326;
-	height: 100px;
+	background: #222;
+	height: 25px;
 	width: 100%;
 	position: absolute;
 	clear:both;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #f8f8f8;
+	text-align: center;
 }
 
-#aboutBar {
-	height: 100px;
-	width: 100%;
-	background: #958976;
-}
 
+@media all and (max-width: 600px) {
+	.jumbotron{ 
+		background: black;
+		background-size: cover;
+		height:300px;
+	}
+	.jumbotron img{
+		position: absolute;
+		width: 100vw;
+		bottom: -5px;
+	}
+
+	#bgvid { 
+		display: none; 
+	}
+	.feastTitle{
+		position: relative;
+		font-size: 35vw;
+		left: 0s;
+		top: 0;
+		margin: 0;
+		width:0;
+			
+	}
+}
 
 
 
