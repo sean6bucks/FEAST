@@ -205,7 +205,7 @@ a{
 	/*float: left;*/
 	/*min-width: 320.391px;*/
 	display: inline-block;
-	max-width: 600px;
+/*	max-width: 600px;*/
 	vertical-align: top;
 	position: absolute;
 	overflow: hidden;
