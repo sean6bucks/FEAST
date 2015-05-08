@@ -2,16 +2,86 @@
 <html>
 	<head>
 		<title>Portfolio</title>
+
 		<link rel="stylesheet" href='stylesheet.css' type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'/>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
-		<script type="text/javascript" 
-		src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-
-		<!--<script src="jquery.vide.js"></script> -->
 
 		<script src="feastJS.js"></script>
+		<script src="feastGallery.js"></script>
+		
 	</head>
 	<body>
+		<div id="bodyColumn">
+			<img id="navButton" src="images/squaresample3.png"/>
+			<div id="navWindow">
+				<ul class="navText">
+					<li><a href="index.html"><h3>Home</h3></a></li>
+					<li><a href="feastWork.html"><h3>Portfolio</h3></a></li>
+					<li><h3>About</h3></li>
+					<li><h3>Contact</h3></li>
+					<li><h3>Blog</h3></li>
+				</ul><!--
+				--><h3 class="navX">&#x2715;</h3>
+			</div>
+			<div class="headerTitle">
+				<h3>FEAST</h3>
+			</div>
+			<div class="workJumbotron">
+				<a class="activeSlide" href="iceHead.html">
+					<img src="images/work/iceJumbotron.jpg" />
+				</a>
+				<a class="slide" href="alexHead.html">
+					<img src="images/work/alexJumbotron.jpg" />
+				</a>
+				<a class="slide" href="demonTeeth.html">
+					<img src="images/work/demonJumbotron.jpg" />
+				</a>
+				<a class="slide" href="corpse.html">
+					<img src="images/work/corpseJumbotron.jpg" />
+				</a>
+			</div>
+			<div class="workCategories">
+				<ul class="catNav">
+					<li id="allCat">All</li>
+					<li id="makeupCat">Makeup</li>
+					<li id="fabCat">Fabrication</li>
+					<li id="videoCat">Video</li>
+					<li id="persCat">Personal</li>
+				</ul>
+			</div>
+			<div class="gallery">
+				<div class="thumbnail allCat makeupCat">
+					<a href="alexHead.html"><img src="images/thumbs/alexThumb.jpg" /></a>
+				</div><!--
+			--><div class="thumbnail allCat fabCat">
+					<a href="corpse.html">
+					<img src="images/thumbs/corpseThumb.jpg" /></a>
+				</div><!--
+			--><div class="thumbnail allCat videoCat persCat">
+					<a href="cerealKiller.html">
+					<img src="images/thumbs/cerealThumb.jpg" />
+					</a>
+				</div><!--
+			--><div class="thumbnail allCat fabCat">
+					<img src="images/thumbs/iceThumb.jpg" />
+				</div><!--
+			--><div class="thumbnail allCat makeupCat persCat">
+					<img src="images/thumbs/demonThumb.jpg" />
+				</div><!--
+			--><div class="thumbnail allCat fabCat persCat">
+					<img src="images/thumbs/bodyThumb.jpg" />
+				</div><!--
+			--><div class="thumbnail allCat makeupCat">
+					<img src="images/thumbs/brainThumb.jpg" />
+				</div><!--
+			--><div class="thumbnail allCat fabCat makeupCat">
+					<img src="images/squaresample3.png" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

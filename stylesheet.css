@@ -62,43 +62,11 @@ table {
 /*for layout purposes*/
 
 
-/*-----Header------*/
-/*#navBar {
-	height: 80px;
-	width: 100%;
-	top: 0;
-	background: #1d2326;
-	background-color: #f8f8f8;
-	text-align: center;
-
-}
-
-#navBar h2{
-	font-family: 'MKfont', Helvetica, sans-serif;
-	font-size: 42pt;
-	text-align: center;
-	color: #611427;
-	text-shadow: 2px 2px #666;
-	color: white;
-	text-shadow: 3px -3px 4px cyan, -3px -3px 4px magenta, 0px 3px 4px yellow;
-}
-
-.pageButtons {
-	color: #6a6a61;
-	margin-top: 5px;
-}
-
-.pageButtons li{
-	display: inline;
-	font-size: 12pt;
-	font-weight: 300;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	padding: 0 5px 0 5px;
-}*/
 
 body {
 	overflow-x: hidden;
 	background-color: #222; 
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 #bodyColumn {
@@ -107,11 +75,73 @@ body {
 	overflow: hidden;
 	min-width: 800px;
 }
+
+h3{
+	font-size: 24pt;
+	font-weight: 100;
+	color: #f8f8f8;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*======= NAV BAR ======*/
+
+
+
+#navButton{
+	width: 75px;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+#navWindow{
+	width: 100%;
+	height: 75px;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 2;
+	left: -100%;
+}
+
+.navText{
+	width: 100%;
+	min-width: 600px;
+	text-align: center;
+	position: fixed;
+
+}
+
+.navText li{
+	margin: auto auto;
+	display: inline-block;
+	padding: 0 2.5%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 75px;
+}
+
+.navX{
+	display: inline-block;
+	width: 75px;
+	position: absolute;
+	line-height: 75px;
+	height: 100px;
+	text-align: center;
+	z-index: 2;
+	right: 0;
+	font-weight: 100;
+}
+
 /*-----Jumbotron----*/
 
 .jumbotron {
 	/* background only for layout purposes*/
-	background: red;
+	background-color: #222;
 	width:100%;
 	height: 600px;
 	overflow:hidden;
@@ -120,15 +150,15 @@ body {
 }
 
 #bgvid{
-position: absolute;
-left: -25%;
-bottom: -25px;
-width: 150%;
-height: auto;
-z-index: 0;
-background: url(images/feastintro2.jpg) no-repeat;
-background-size: cover;
-/*vertical-align: bottom;*/
+	position: absolute;
+	left: -25%;
+	bottom: -25px;
+	width: 150%;
+	height: auto;
+	z-index: 0;
+	background: url(images/feastintro2.jpg) no-repeat;
+	background-size: cover;
+	/*vertical-align: bottom;*/
 }
 
 .feastTitle {
@@ -138,7 +168,7 @@ background-size: cover;
 	width: 100%;
 	text-align: center;
 	margin: 200px auto;
-	z-index: 2;
+	z-index: 1;
 	color: white;
 }
 
@@ -154,7 +184,7 @@ background-size: cover;
 /*---Index page Work bar---*/
 
 #workBar {
-	background: red;
+	background: #222;
 	width: 2400px;
 	margin: 0;
 	padding: 0;
@@ -164,7 +194,7 @@ background-size: cover;
 }
 
 .scrollBox {
-	background: red;
+	background: #222;
 	width: 100%;
 	overflow: hidden;
 	min-height:180px;
@@ -239,16 +269,15 @@ background-size: cover;
 	text-align: center;
 }
 
-.aboutText h3{
+.aboutText h4{
 	font-size: 50pt;
 	margin: 0 auto 5px auto;
 	padding-top: 50px;
 	font-weight: 100;
+	color: #f8f8f8;
 }
-.aboutText h2{
-	font-size: 24pt;
+.aboutText h3{
 	margin-bottom: 20px;
-	font-weight: 100;
 }
 
 .aboutText hr{
@@ -258,6 +287,7 @@ background-size: cover;
 }
 .aboutText p{
 	width: 525px;
+	color: #999;
 	margin: 0 auto;
 	padding-top: 20px;
 	text-indent: 50px;
@@ -266,9 +296,6 @@ background-size: cover;
 	padding-bottom: 50px;
 	font-weight: 100;
 }
-
-
-
 
 /*----Footer----*/
 
@@ -282,11 +309,83 @@ background-size: cover;
 	color: #f8f8f8;
 	text-align: center;
 }
+/*========== PORTFOLIO STYLING =========*/
+.headerTitle{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	z-index: 1;
+}
+.headerTitle h3{
+	width: 100%;
+	color: white;
+	font-family: 'MKfont', Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-size: 50px;
+}
+
+.workJumbotron{
+	width: 100%;
+	height: 450px;
+	background: #222;
+	position: relative;
+	overflow: hidden;
+}
+.workJumbotron img{
+	width: 100%;
+	position: absolute;
+	bottom: -5%;
+}
+
+.activeSlide{
+	display: static;
+}
+
+.slide{
+	display: none;
+}
+
+.workCategories{
+	width: 100%;
+	height: 40px;
+	background: #222;
+}
+
+.catNav {
+	width: 100%;
+	min-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+.catNav li{
+	color: #999;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.gallery{
+	width: 100%;
+}
+
+.thumbnail{
+	display: inline-block;
+	float: left;
+	width: 25%;
+}
+.thumbnail img{
+	width: 100%;
+	vertical-align: top;
+}
 
 
+/*==========================*/
+/*Need to eventually adjust all "width-min" instead to adjust to this*/
 @media all and (max-width: 600px) {
 	.jumbotron{ 
-		background: black;
+		background: #222;
 		background-size: cover;
 		height:300px;
 	}
@@ -317,6 +416,10 @@ background-size: cover;
 	.aboutText p{
 		width: 90%;
 		text-indent: 25px;
+	}
+	
+	/*.thumbnail{
+	width: 50%;*/
 	}
 }
 
