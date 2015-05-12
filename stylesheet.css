@@ -356,6 +356,17 @@ hr {
 	padding: 15px 0;
 }
 
+#contactBox img{
+	vertical-align: middle;
+	display: inline;
+	width: 24px;
+	padding: 4px;
+}
+
+.contactLink p{
+	padding-right: 15px;
+}
+
 
 /*====SOCIAL BOX==========*/
 
@@ -372,13 +383,25 @@ hr {
 
 #socialBox li{
 	text-align: center;
+	vertical-align: middle;
 	padding: 15px 0;
+}
+
+.socialLink p{
+	padding-left: 16px;
 }
 
 #socialBox a:hover{
 	text-decoration: underline;
 	color: #999;
 }
+
+#socialBox img{
+	vertical-align: middle;
+	display: inline;
+	width: 32px;
+}
+
 /*======FOOTER====*/
 
 #footer {
