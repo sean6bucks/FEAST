@@ -10,6 +10,17 @@ $('.navX').click(function(){
   TweenMax.to(navWindow, 1, {left:"-100%", ease:Power1.easeInOut});
 })
 
+$('.jumbotron').click(function(){
+  $("html, body").animate({ scrollTop: $('#workBar').offset().top }, 500);
+})
+
+$('.aboutNav').click(function(){
+  $("html, body").animate({ scrollTop: $('#aboutBar').offset().top }, 500);
+})
+
+$('.contactNav').click(function(){
+  $("html, body").animate({ scrollTop: $('#contactBox').offset().top }, 500);
+})
 
 var scroller = function(){
    var thumb1 = document.getElementsByClassName("homeThumb1");

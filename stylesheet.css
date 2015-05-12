@@ -64,6 +64,7 @@ table {
 
 
 body {
+	position: relative;
 	overflow-x: hidden;
 	background-color: #222; 
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -85,6 +86,19 @@ h3{
 a{
 	text-decoration: none;
 }
+
+p {	
+	color: #999;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background: #999;
+}
+
 
 /*======= NAV BAR ======*/
 
@@ -113,7 +127,7 @@ a{
 	min-width: 600px;
 	text-align: center;
 	position: fixed;
-
+	cursor: pointer;
 }
 
 .navText li{
@@ -143,21 +157,22 @@ a{
 	/* background only for layout purposes*/
 	background-color: #222;
 	width:100%;
-	height: 600px;
+	height: 100vh;
 	overflow:hidden;
 	position: relative;
-
+	cursor: default;
 }
 
 #bgvid{
 	position: absolute;
 	left: -25%;
-	bottom: -25px;
+	bottom: -100px;
 	width: 150%;
 	height: auto;
 	z-index: 0;
-	background: url(images/feastintro2.jpg) no-repeat;
+	background: url(images/feastIntroNew.jpg) no-repeat;
 	background-size: cover;
+	min-width: 1600px;
 	/*vertical-align: bottom;*/
 }
 
@@ -167,7 +182,7 @@ a{
 	font-size: 200px;
 	width: 100%;
 	text-align: center;
-	margin: 200px auto;
+	line-height: 100vh;
 	z-index: 1;
 	color: white;
 }
@@ -184,8 +199,9 @@ a{
 /*---Index page Work bar---*/
 
 #workBar {
+	position: relative;
 	background: #222;
-	width: 2400px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	/*min-height: 180px;*/
@@ -197,15 +213,12 @@ a{
 	background: #222;
 	width: 100%;
 	overflow: hidden;
-	min-height:180px;
+	/*min-height:180px;*/
 }
 
 .workElement {
 	width: 40%;
-	/*float: left;*/
-	/*min-width: 320.391px;*/
 	display: inline-block;
-	/*max-width: 600px;*/
 	vertical-align: top;
 	position: absolute;
 	overflow: hidden;
@@ -287,28 +300,111 @@ a{
 }
 .aboutText p{
 	width: 525px;
-	color: #999;
 	margin: 0 auto;
 	padding-top: 20px;
 	text-indent: 50px;
-	font-size: 20pt;
 	text-align: left;
 	padding-bottom: 50px;
-	font-weight: 100;
+	line-height: 22pt;
 }
 
-/*----Footer----*/
+/*=====Oblivion Rising=====*/
+
+#oblivionBar{
+	min-width: 800px;
+	padding: 20px auto;
+	width: 100%;
+	height: 300px;
+	background: #f8f8f8;
+	text-align: center;
+	background: url(images/oblivionBackground.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.oblivionWrapper h5{
+	font-family: 'MKfont', Helvetica, Arial, sans-serif;
+	font-size: 150px;
+}
+
+.oblivionWrapper{
+	height: 200px;
+	width: 100%;
+	background: rgba(255,255,255,0.5);
+	color: #222;
+	padding: 50px 0;
+}
+.oblivionWrapper p{
+	color: #222;
+	font-weight: 300;
+}
+
+/*====CONTACT BOX========*/
+
+#contactBox {
+	width: 50%;
+	display: inline-block;
+	height: 300px;
+}
+
+#contactBox ul{
+	padding-top: 20px;
+}
+
+#contactBox li{
+	text-align: center;
+	padding: 15px 0;
+}
+
+
+/*====SOCIAL BOX==========*/
+
+#socialBox {
+	width: 50%;
+	display: inline-block;
+	height: 300px;
+	vertical-align: top;
+}
+
+#socialBox ul{
+	padding-top: 20px;
+}
+
+#socialBox li{
+	text-align: center;
+	padding: 15px 0;
+}
+
+#socialBox a:hover{
+	text-decoration: underline;
+	color: #999;
+}
+/*======FOOTER====*/
 
 #footer {
-	background: #222;
-	height: 25px;
+	background: #f8f8f8;
+	height: 50px;
 	width: 100%;
-	position: absolute;
-	clear:both;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	color: #f8f8f8;
+	clear: both;
+}
+
+.footerText{
+	width: 100%;
+	min-width: 600px;
 	text-align: center;
 }
+
+.footerText li, .footerText a{
+	margin: 0 auto;
+	display: inline-block;
+	padding: 0 2.5%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	color: #222;
+	text-decoration: none;
+}
+
 /*========== PORTFOLIO STYLING =========*/
 .headerTitle{
 	position: absolute;
@@ -358,12 +454,12 @@ a{
 	text-align: center;
 }
 .catNav li{
-	color: #999;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	display: inline-block;
 	padding: 10px 20px;
 	cursor: pointer;
+	color: #f8f8f8;
 }
 
 .gallery{
@@ -383,45 +479,200 @@ a{
 
 /*==========================*/
 /*Need to eventually adjust all "width-min" instead to adjust to this*/
-@media all and (max-width: 600px) {
+@media only screen and (max-device-width : 1200px){
+
+	#bodyColumn{
+		min-width: 0;
+	}
+
+	/*Navigation Window*/
+	#navButton{
+		width: 150px;
+		height: 150px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 3;
+
+	}
+
+	#navWindow{
+		width: 100%;
+		height: auto;
+		position: fixed;
+		z-index: 2;
+		left: -100%;
+	}
+
+	.navText{
+		width: 100%;
+		height: 600px;
+		min-width: 0;
+		text-align: left;
+		position: fixed;
+		background: rgba(0,0,0,0.75);
+	}
+
+	.navText li{
+		width: 100%;
+		display: initial;
+		text-align: center;
+		padding: 0;
+		/*vertical-align: middle;*/
+	}
+
+	.navText h3{
+		color: #f8f8f8;
+		font-size: 50pt;
+		line-height: 120px;
+		font-weight: 300;
+		padding: 0 auto;
+		height: 120px;
+	}
+
+	/*Jumbotron*/
+
 	.jumbotron{ 
 		background: #222;
 		background-size: cover;
-		height:300px;
+		height:600px;
 	}
+	
 	.jumbotron img{
 		position: absolute;
-		width: 100vw;
-		bottom: -5px;
+		width: 100%;
 	}
 
-	#bgvid { 
+	video { 
 		display: none; 
 	}
-	.feastTitle{
-		position: relative;
-		font-size: 35vw;
-		left: 0s;
-		top: 0;
-		margin: 0;
-		width:0;
-			
-	}
-	.aboutText {
-	width: 100%%;
-	margin: 0;
+
+	.feastTitle {
+		font-family: 'MKfont', Helvetica, Arial, sans-serif;
+		position: absolute;
+		font-size: 300px;
+		width: 100%;
+		text-align: center;
+		line-height: 600px;
+		z-index: 1;
+		color: white;
 	}
 
+	.poster {
+		width:100%;
+		min-width: 0;
+		margin-top: 0;
+	}
+
+	.largeText{
+		display: initial;
+	}
+
+	.aboutText {
+		width: 100%%;
+		margin: 0;
+	}
+
+	.aboutText h4{
+		font-size: 100pt;
+	}
+
+	h3{
+		font-size: 50pt;
+		font-weight: 100;
+		color: #f8f8f8;
+	}
 
 	.aboutText p{
 		width: 90%;
-		text-indent: 25px;
+		text-indent: 50px;
+		font-size: 40pt;
+		line-height: 40pt;
 	}
-	
-	/*.thumbnail{
-	width: 50%;*/
+
+	.catNav {
+	width: 100%;
+	min-width: 0;
 	}
+
+	.footerText{
+	width: 100%;
+	min-width: 0;
+	}
+/*OBLIVION BAR*/
+
+	#oblivionBar{
+	min-width: 0;
+	height: 600px;
+	}
+
+	.oblivionWrapper{
+		width: 100%;
+		padding: 0;
+		height: 600px;
+	}	
+	.oblivionWrapper h5{
+		font-size: 300px;
+		height: 600px;
+	}
+
+	.oblivionWrapper p{
+		display: none;
+	}
+
+	#contactBox {
+		width: 50%;
+		display: inline-block;
+		height: 600px;
+	}
+
+	#contactBox ul{
+		padding-top: 40px;
+	}
+
+	#contactBox li{
+		text-align: center;
+		padding: 30px 0;
+	}
+	#contactBox p{
+		font-size: 40pt;
+	}
+
+	#contactBox li a{
+		text-decoration: none;
+		color: #999;
+	}
+
+
+	/*====SOCIAL BOX==========*/
+
+	#socialBox {
+		width: 50%;
+		display: inline-block;
+		height: 600px;
+		vertical-align: top;
+	}
+
+	#socialBox ul{
+		padding-top: 40px;
+	}
+
+	#socialBox li{
+		text-align: center;
+		padding: 30px 0;
+	}
+
+	#socialBox p{
+		font-size: 40pt;
+	}
+
+	#socialBox a:hover{
+		text-decoration: underline;
+		color: #999;
+	}
+
 }
+
 
 
 
